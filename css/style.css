@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    /*optional*/
+}
+
+.clear {
+    clear: both;
+}
+
+.title {
+    text-transform: uppercase;
+    /*ANIMATION*/
+    color: teal;
+    margin-bottom: 5px;
+    font-size: 32px;
+}
+
+img {
+    width: 200px;
+}
+
+/* ----------------------------------------------------- */
+section {
+    padding: 100px 0;
+    /*top and bottom: 100px */
+}
+
+.box {
+    width: 400px;
+    height: 400px;
+    /* background-color: cornflowerblue; */
+    margin: auto;
+}
+
+
+.ani-color {
+    animation-name: color-animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes color-animation {
+    0% {
+        background-color: red;
+    }
+
+    20% {
+        background-color: orangered;
+    }
+
+    40% {
+        background-color: orange;
+    }
+
+    60% {
+        background-color: coral;
+    }
+
+    80% {
+        background-color: cornflowerblue;
+    }
+
+    100% {
+        background-color: blue;
+    }
+
+}
+
+.ani-image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    animation-name: image-animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes image-animation {
+
+    0% {
+        background-image: url(../img/item1.jpg);
+    }
+
+    20% {
+        background-image: url(../img/item2.jpg);
+    }
+
+
+    40% {
+        background-image: url(../img/item3.jpg);
+    }
+
+
+    60% {
+        background-image: url(../img/item1.jpg);
+    }
+
+    80% {
+        background-image: url(../img/item2.jpg);
+    }
+
+    100% {
+        background-image: url(../img/item3.jpg);
+    }
+
+}
+
+.scale-with-width img:hover{
+    width: 300px;
+}
+/* ------------------------------------ */
+.scale-with-transform img{
+    transition: transform 1s;
+}
+
+.scale-with-transform img:hover {
+    transform: scale(2);
+}
+/* ------------------------------------ */
+
+.rotate-with-transform img {
+    transition: transform 1s;
+}
+
+.rotate-with-transform img:hover {
+    transform: rotate(360deg);
+}
+
+/* ---------------------------------------- */
+
+
+.preloader-section img,
+.preloader-section i{
+    animation-name: spinner;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.preloader-section i{
+    font-size: 40px;
+    margin: 0 40px;
+}
+
+
+@keyframes spinner {
+
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
