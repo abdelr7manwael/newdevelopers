@@ -1,95 +1,155 @@
 <html>
+
     <head>
-        <title>animation session</title>
+        <title>revision session</title>
         <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/style.css">
     </head>
+
     <body>
 
 
-        <!-- 
-            - animation
-                * color
-                * image
-            - transform
-                * scale
-                * rotate
-            - animation with transform 
-            - revision on position 
-
-         -->
-
-         <section class="ani-color-section">
+    <!-- 
+        <section class="scale-section">
             <div class="container">
-                <h2 class="title">color animation</h2>
-                <div class="box ani-color"></div>
+
+                <img src="img/icons8-restart-512.png" alt="">
+                <img src="img/icons8-restart-512.png" alt="">
+                <img src="img/icons8-restart-512.png" alt="">
+                <img src="img/icons8-restart-512.png" alt="">
+
             </div>
-         </section>
+        </section> 
+    -->
 
-         <section class="ani-image-section">
-            <div class="container">
-                <h2 class="title">image animation</h2>
-                <div class="box ani-image"></div>
+
+    <!-- flex box -->
+
+    <!-- 
+        parent: display: flex, directions 
+            row: - - - - -
+            **************************************
+            column:
+            -
+            -
+            -
+            **************************************
+
+            - justify-content: right-left (row)
+            - align-items: top-bottom (row)
+
+
+
+        child: width, grow, shrink, order = 0, align-self
+    
+    -->
+
+
+    <!-- <section class="flex-box">
+        <div class="container">
+            <div class="d-flex">
+                <div class="child one">1</div>
+                <div class="child">2</div>
+                <div class="child">3</div>
+                <div class="child four">4</div>
+
             </div>
-         </section>
+        </div>
+    </section>
+        -->
 
 
+    <section class="chefs">
+        <div class="container">
+            <div class="d-flex">
+                <div class="chef">
 
-        <section class="scale-with-width-section">
-            <div class="container">
-                <h2 class="title">scale with width</h2>
-                <div class="scale-with-width">
-                    <img src="img/icons8-restart-512.png" alt="">
-                    <img src="img/icons8-restart-512.png" alt="">
-                    <img src="img/icons8-restart-512.png" alt="">
-                    <img src="img/icons8-restart-512.png" alt="">
+                    <div class="relative">
+                        <img src="img/chefs-1.jpg" alt="">
+
+
+                        <!-- wave -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L18.5,144C36.9,128,74,96,111,117.3C147.7,139,185,213,222,245.3C258.5,277,295,267,332,245.3C369.2,224,406,192,443,197.3C480,203,517,245,554,234.7C590.8,224,628,160,665,138.7C701.5,117,738,139,775,128C812.3,117,849,75,886,85.3C923.1,96,960,160,997,165.3C1033.8,171,1071,117,1108,101.3C1144.6,85,1182,107,1218,128C1255.4,149,1292,171,1329,165.3C1366.2,160,1403,128,1422,112L1440,96L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z"></path></svg>
+
+                        <!-- icons -->
+
+                        <div class="icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <h3>Walter White</h3>
+                    <p>Master Chef</p>
+                    <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Saepe Exercitationem Libero Provident. Quam, Aspernatur Explicabo Asperiores Illo Nihil Eaque Reiciendis.</p>
                 </div>
-            </div>
-        </section>
 
-        <section class="scale-with-transform-section">
-            <div class="container">
-                <h2 class="title">scale with transform</h2>
-                <div class="scale-with-transform">
-                    <img src="img/icons8-restart-512.png" alt="">
-                    <img src="img/icons8-restart-512.png" alt="">
-                    <img src="img/icons8-restart-512.png" alt="">
-                    <img src="img/icons8-restart-512.png" alt="">
+                <div class="chef">
+
+                    <div class="relative">
+                        <img src="img/chefs-1.jpg" alt="">
+
+
+                        <!-- wave -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L18.5,144C36.9,128,74,96,111,117.3C147.7,139,185,213,222,245.3C258.5,277,295,267,332,245.3C369.2,224,406,192,443,197.3C480,203,517,245,554,234.7C590.8,224,628,160,665,138.7C701.5,117,738,139,775,128C812.3,117,849,75,886,85.3C923.1,96,960,160,997,165.3C1033.8,171,1071,117,1108,101.3C1144.6,85,1182,107,1218,128C1255.4,149,1292,171,1329,165.3C1366.2,160,1403,128,1422,112L1440,96L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z"></path></svg>
+
+                        <!-- icons -->
+
+                        <div class="icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <h3>Walter White</h3>
+                    <p>Master Chef</p>
+                    <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Saepe Exercitationem Libero Provident. Quam, Aspernatur Explicabo Asperiores Illo Nihil Eaque Reiciendis.</p>
                 </div>
-            </div>
-        </section>
+
+                <div class="chef">
+
+                    <div class="relative">
+                        <img src="img/chefs-1.jpg" alt="">
 
 
-        <section class="rotate-with-transform-section">
-            <div class="container">
-                <h2 class="title">rotate with transform</h2>
-                <div class="rotate-with-transform">
-                    <img src="img/icons8-restart-512.png" alt="">
-                    <img src="img/icons8-restart-512.png" alt="">
-                    <img src="img/icons8-restart-512.png" alt="">
-                    <img src="img/icons8-restart-512.png" alt="">
+                        <!-- wave -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L18.5,144C36.9,128,74,96,111,117.3C147.7,139,185,213,222,245.3C258.5,277,295,267,332,245.3C369.2,224,406,192,443,197.3C480,203,517,245,554,234.7C590.8,224,628,160,665,138.7C701.5,117,738,139,775,128C812.3,117,849,75,886,85.3C923.1,96,960,160,997,165.3C1033.8,171,1071,117,1108,101.3C1144.6,85,1182,107,1218,128C1255.4,149,1292,171,1329,165.3C1366.2,160,1403,128,1422,112L1440,96L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z"></path></svg>
+
+                        <!-- icons -->
+
+                        <div class="icons">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <h3>Walter White</h3>
+                    <p>Master Chef</p>
+                    <p>Lorem Ipsum Dolor Sit, Amet Consectetur Adipisicing Elit. Saepe Exercitationem Libero Provident. Quam, Aspernatur Explicabo Asperiores Illo Nihil Eaque Reiciendis.</p>
                 </div>
+
+
             </div>
-        </section>
 
 
-        <section class="preloader-section">
-            <div class="container">
-                <h2 class="title">preloader (spinner)</h2>
-                <div class="preloader">
-                    <img src="img/icons8-restart-512.png" alt="">
-                    <i class="fa-solid fa-spinner"></i>
-                    <i class="fa-solid fa-gear"></i>
-                    <i class="fa-solid fa-sun"></i>
-                    <i class="fa-solid fa-hurricane"></i>
-                    <i class="fa-solid fa-yin-yang"></i>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>    
 
-
-
-
-        
     </body>
+
 </html>
